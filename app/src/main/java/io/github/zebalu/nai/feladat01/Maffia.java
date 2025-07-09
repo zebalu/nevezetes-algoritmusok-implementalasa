@@ -33,8 +33,8 @@ public class Maffia {
         if (allHouses.length == 0) {
             return 0;
         }
-        //Arrays.sort(allHouses);
-        QuickSort.quickSort(allHouses);
+        Arrays.sort(allHouses);
+        //.quickSort(allHouses);
         System.out.println(Arrays.toString(allHouses));
         int selected = allHouses[(allHouses.length - 1)/2];
         return IntStream.of(allHouses).map(i->Math.abs(i - selected)).sum();
