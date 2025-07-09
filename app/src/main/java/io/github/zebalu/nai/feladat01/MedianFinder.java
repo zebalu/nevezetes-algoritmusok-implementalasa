@@ -6,8 +6,6 @@ final class MedianFinder {
     }
 
     static int medianOfMedians(int[] array) {
-        record triplet(int from, int to, int idx) {
-        }
         int from = 0;
         int to = array.length - 1;
         int expectedIdx = (array.length - 1) / 2;

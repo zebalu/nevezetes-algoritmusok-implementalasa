@@ -2,7 +2,10 @@ package io.github.zebalu.nai.feladat01;
 
 import java.util.Arrays;
 
-public class CountingSort {
+final class CountingSort {
+    private CountingSort() {
+        throw new IllegalAccessError("Utility class");
+    }
     static void countingSort(int[] array, int max) {
         int[] c = new int[max + 1];
         Arrays.fill(c, 0);
