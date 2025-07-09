@@ -1,6 +1,5 @@
 package io.github.zebalu.nai.feladat01;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.IntStream;
@@ -35,8 +34,9 @@ public class Maffia {
         }
         Arrays.sort(allHouses);
         //QuickSort.quickSort(allHouses);
-        System.out.println(Arrays.toString(allHouses));
-        int selected = allHouses[(allHouses.length - 1)/2];
-        return IntStream.of(allHouses).map(i->Math.abs(i - selected)).sum();
+        int selected = allHouses[(allHouses.length - 1) / 2];
+        //Task asks for weight, but example returns selected;
+        int weight = IntStream.of(allHouses).map(i -> Math.abs(i - selected)).sum();
+        return selected;
     }
 }

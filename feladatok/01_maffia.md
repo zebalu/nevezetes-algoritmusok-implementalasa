@@ -55,3 +55,5 @@ Mivel a feladatban ismert az elemek maximális értéke, akér a [számláló re
 is felmerülhet, de az `n` és `k` (rokonok száma kontra lehetséges címek maximuma)
 fordított aránya esetén lenne gyorsabb, mint az n*log(n) -es QuickSort.
 
+Vagy lehetne a [MedianOfMedians](../app/src/main/java/io/github/zebalu/nai/feladat01/MedianFinder.java) algoritmussal
+is dolgozni. Ez garantáltan lináris időben találja meg egy számsor mediánját.
