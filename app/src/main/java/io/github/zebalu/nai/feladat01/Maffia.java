@@ -34,7 +34,7 @@ public class Maffia {
             return 0;
         }
         Arrays.sort(allHouses);
-        //.quickSort(allHouses);
+        //QuickSort.quickSort(allHouses);
         System.out.println(Arrays.toString(allHouses));
         int selected = allHouses[(allHouses.length - 1)/2];
         return IntStream.of(allHouses).map(i->Math.abs(i - selected)).sum();
